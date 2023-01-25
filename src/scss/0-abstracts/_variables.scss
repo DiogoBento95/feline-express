@@ -1,0 +1,23 @@
+$colors: (
+    first: #dad7cd,
+    second: #a3b18a,
+    third: #588157,
+    fourth: #3a5a40,
+    fifth: #344e41
+);
+
+@function color($color-name) {
+    @return map-get($map: $colors, $key: $color-name);
+}
+
+$font-sizes: (
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.8rem,
+    xs: 1.6rem
+);
+
+@function size($size) {
+    @return map-get($map: $font-sizes, $key: $size);
+}
