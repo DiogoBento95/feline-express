@@ -1,0 +1,76 @@
+.header {
+  background: linear-gradient(color(fourth), color(third));
+
+  .logo-and-nav {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      padding: 1rem;
+      display: flex;
+
+      &-img {
+        height: 9.375rem; // = 150px;
+        width: 7.8125rem; // = 125px;
+      }
+
+      &-text {
+      font-family: 'Libre Baskerville', serif;
+      font-size: size(md);
+      color: color(first);
+      padding-left: .2rem;
+      padding-bottom: 1.4rem;
+      display: flex;
+      align-self: flex-end;
+      }
+    }
+
+    .nav {
+      width: 40%;
+
+      &-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2rem;
+        padding-right: 1rem;
+
+        &-item {
+          list-style: none;
+
+          .nav-link {
+            text-decoration: none;
+            font-family: 'Libre Baskerville', serif;
+            font-size: size(xs);
+            color: color(first);
+
+            .fa-address-card {
+              margin-right: .1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .heading {
+    padding-bottom: 2rem;
+
+    &-text {
+      text-align: center;
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-size: size(xl);
+      color: color(first);
+      margin-right: 15rem;
+    }
+
+    &-subtext {
+      text-align: center;
+      font-family: 'Libre Baskerville', serif;
+      font-size: size(md);
+      color: color(first);
+      padding: 1rem 0;
+    }
+  }
+}
