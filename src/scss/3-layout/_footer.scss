@@ -47,6 +47,19 @@
   &-copyright {
     &-paragraph {
       color: color(first);
+      font-weight: 500;
+
+      .italic-text {
+        font-family: 'Libre Baskerville', serif;
+      }
     }
   }
+}
+
+$socialMediaColors: 1 #3b5998, 2 #55acee, 3 #D62976, 4 #b31217;
+
+@each $color in $socialMediaColors {
+    .media-list-item:nth-child(#{nth($color, 1)}) .media-link {
+        color: nth($color, 2);
+    }
 }
