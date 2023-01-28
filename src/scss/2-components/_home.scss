@@ -1,16 +1,10 @@
-body {
-  min-height: 100%;
-}
-
 .background-photo {
   height: 100%;
   background-color: color(third);
   position: relative;
 
   &-img {
-    position: relative;
-    width: 100%;
-    height: 50%;
+    height: 100%;
   }
 
   .background-text-box {

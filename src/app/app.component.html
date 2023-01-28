@@ -1,1 +1,108 @@
-<router-outlet></router-outlet>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="#">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/images/Cat_Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+  integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+  crossorigin="anonymous"
+  />
+  <title>The Feline Express</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-and-nav">
+
+      <div class="logo">
+        <img src="assets/images/Cat_Logo.png" class="logo-img" alt="">
+        <h2 class="logo-text">Welcome to..</h2>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list-item" routerLinkActive="active">
+            <a routerLink="/" class="nav-link">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-list-item" routerLinkActive="active">
+            <a routerLink="/adopt" class="nav-link">
+              <i class="fas fa-cat"></i>
+              Adopt a Cat
+            </a>
+          </li>
+          <li class="nav-list-item" routerLinkActive="active">
+            <a routerLink="/about" class="nav-link">
+              <i class="fas fa-address-card"></i>
+              About Us
+            </a>
+          </li>
+          <li class="nav-list-item" routerLinkActive="active">
+            <a routerLink="/contact" class="nav-link">
+              <i class="fas fa-envelope"></i>
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="heading">
+      <h1 class="heading-text">The Feline Express</h1>
+      <h2 class="heading-subtext">Adopt a Cat today!</h2>
+    </div>
+
+  </header>
+  <!-- End of Header -->
+    <router-outlet></router-outlet>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-header">
+      <img src="assets/images/Cat_Logo.png" class="footer-header-img" alt="">
+      <h1 class="footer-header-text">The Feline Express</h1>
+    </div>
+
+    <div class="footer-social-media">
+        <ul class="media-list">
+            <li class="media-list-item">
+                <a (click)="facebook()" class="media-link">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </li>
+            <li class="media-list-item">
+                <a (click)="twitter()" class="media-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="media-list-item">
+                <a (click)="instagram()" class="media-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li class="media-list-item">
+                <a (click)="youtube()" class="media-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-copyright">
+        <p class="footer-copyright-paragraph">
+            &copy; Copyright. <i class="footer-copyright-paragraph italic-text">The Feline Express</i>. All Rights Reserved
+        </p>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+</body>
+</html>
