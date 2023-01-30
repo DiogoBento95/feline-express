@@ -1,3 +1,63 @@
 .about-us {
+  background: linear-gradient(color(third), color(second));
   display: flex;
+  padding: 60px 100px 60px 60px;
+  align-items: center;
+
+  &-img {
+    width: 40%;
+    height: 30%;
+    border: 5px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-text {
+    padding: 60px 0 60px 80px;
+    text-align: justify;
+    margin-bottom: 50px;
+
+    &-heading {
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-size: size(lg);
+      text-indent: 50px;
+      margin-bottom: 30px;
+    }
+
+    &-paragraph {
+      width: 80%;
+      font-size: size(sm);
+      text-indent: 17px;
+      font-weight: 400;
+    }
+  }
+}
+
+.mission {
+  background-color: color(second);
+  text-align: center;
+  padding-bottom: 30px;
+
+  &-heading {
+    font-family: 'Libre Baskerville', serif;
+    border-bottom: 2px solid black;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.help-us {
+  position: relative;
+  background: linear-gradient(color(second), color(third));
+
+  &-img {
+    width: 70%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
