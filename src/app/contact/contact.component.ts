@@ -30,7 +30,6 @@ export class ContactComponent implements OnInit {
     this.initForm();
   }
 
-  //ngSubmit - HTML
   onSubmit() {
     console.log(this.felineForm);
   }
