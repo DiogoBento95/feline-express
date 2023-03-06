@@ -11,6 +11,19 @@
   .form {
     text-align: center;
 
+    .buttons-div {
+      button {
+        text-decoration: none;
+        color: color(first);
+        padding: .5rem .8rem;
+        border: 2px solid #101010;
+        border-radius: 20px;
+        font-weight: bold;
+        margin: 0px 20px;
+        cursor: pointer;
+      }
+    }
+
     &-group {
       display: flex;
       flex-direction: column;
