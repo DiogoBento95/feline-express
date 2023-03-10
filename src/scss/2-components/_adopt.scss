@@ -1,7 +1,7 @@
 // Slideshow
 
 .slideshow {
-  background: linear-gradient(color(third), color(second));
+  background: color(third);
   position: relative;
   width: 100%;
   height: 80vh;
@@ -80,3 +80,94 @@ $imgList: 1 0s, 2 4s, 3 8s, 4 12s, 5 16s;
 }
 
 // End of Slideshow
+
+.adopt {
+  background: linear-gradient(color(third), color(second));
+  padding: 50px;
+
+  &-heading {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: size(lg);
+  }
+}
+
+// Gallery
+
+.gallery {
+  background: linear-gradient(color(second), color(third));
+  padding: 30px 0px;
+
+  .cards-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .card {
+        margin: 20px 10px;
+        width: 25%;
+        height: 25vw;
+        position: relative;
+        overflow: hidden;
+
+        &:hover .card-overlay {
+            left: 0;
+        }
+
+        &-overlay {
+          position: absolute;
+          top: 0;
+          left: -100%;
+          background-color: color(first);
+          opacity: .8;
+          color: color(second);
+          z-index: 10;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          height: 100%;
+          transition: left .7s;
+
+            &-heading {
+              font-family: 'Libre Baskerville', serif;
+              font-size: 50px;
+              opacity: 1;
+            }
+
+            &-paragraph {
+              font-size: 30px;
+              margin-bottom: 30px;
+              opacity: 1;
+            }
+
+            &-btn {
+              width: 150px;
+              height: 40px;
+              color: color(second);
+              background-color: color(first);
+              font-size: 14px;
+              font-weight: bold;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              border: 2px solid color(second);
+              border-radius: 30px;
+              outline: none;
+              cursor: pointer;
+              opacity: 1;
+            }
+        }
+
+        &-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: .8;
+        }
+    }
+  }
+}
+
+// End of Gallery
