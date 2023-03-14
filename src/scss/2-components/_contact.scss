@@ -12,6 +12,8 @@
     text-align: center;
 
     .buttons-div {
+      margin-top: 15px;
+
       button {
         text-decoration: none;
         color: color(first);
@@ -32,6 +34,7 @@
       label {
         font-family: 'Libre Baskerville', serif;
         font-size: size(sm);
+        margin-top: 15px;
       }
 
       input {
@@ -39,7 +42,6 @@
         width: 15%;
         padding: 8px;
         margin-top: 10px;
-        margin-bottom: 15px;
         box-sizing: border-box;
       }
 
@@ -48,9 +50,13 @@
         width: 15%;
         padding: 8px;
         margin-top: 10px;
-        margin-bottom: 15px;
         box-sizing: border-box;
       }
+    }
+
+    .error-message {
+      font-weight: 400;
+      color: red;
     }
   }
 }

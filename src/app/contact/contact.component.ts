@@ -19,9 +19,9 @@ export class ContactComponent implements OnInit {
     let formDescription = '';
 
     this.felineForm = new FormGroup({
-      'name': new FormControl(formName, Validators.required),
+      'name': new FormControl(formName, [Validators.required, Validators.minLength(3)]),
       'email': new FormControl(formEmail, [Validators.email, Validators.required]),
-      'subject': new FormControl(formSubject, Validators.required),
+      'subject': new FormControl(formSubject, [Validators.required, Validators.minLength(2)]),
       'description': new FormControl(formDescription, Validators.required),
     });
   }
