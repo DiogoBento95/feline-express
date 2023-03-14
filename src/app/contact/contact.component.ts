@@ -36,6 +36,9 @@ export class ContactComponent implements OnInit {
 
   onCancel() {
     this.felineForm.reset();
+  }
+
+  onBack() {
     this.router.navigate(['']);
   }
 
