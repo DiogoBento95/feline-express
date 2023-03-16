@@ -43,6 +43,22 @@
         padding: 8px;
         margin-top: 10px;
         box-sizing: border-box;
+
+        @media(max-width: 1200px) {
+          width: 20%;
+        }
+
+        @media(max-width: 800px) {
+          width: 25%;
+        }
+
+        @media(max-width: 650px) {
+          width: 30%;
+        }
+
+        @media(max-width: 500px) {
+          width: 35%;
+        }
       }
 
       textarea {
@@ -51,6 +67,22 @@
         padding: 8px;
         margin-top: 10px;
         box-sizing: border-box;
+
+        @media(max-width: 1200px) {
+          width: 20%;
+        }
+
+        @media(max-width: 800px) {
+          width: 25%;
+        }
+
+        @media(max-width: 650px) {
+          width: 30%;
+        }
+
+        @media(max-width: 500px) {
+          width: 35%;
+        }
       }
     }
 

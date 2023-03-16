@@ -22,6 +22,10 @@
       padding-bottom: 1.4rem;
       display: flex;
       align-self: flex-end;
+
+        @media(max-width: 500px) {
+          font-size: size(sm);
+        }
       }
     }
 
@@ -35,6 +39,12 @@
         padding-top: 2rem;
         padding-right: 1rem;
 
+        @media(max-width: 1160px) {
+          flex-direction: column;
+          position: absolute;
+          right: 0;
+        }
+
         &-item {
           list-style: none;
 
@@ -43,6 +53,14 @@
             font-family: 'Libre Baskerville', serif;
             font-size: size(xs);
             color: color(first);
+
+            @media(max-width: 1270px) {
+              font-size: 17px;
+            }
+
+            @media(max-width: 1160px) {
+              font-size: size(xs);
+            }
 
             .fa-address-card {
               margin-right: .1rem;
@@ -63,6 +81,14 @@
       font-size: size(xl);
       color: color(first);
       margin-right: 15rem;
+
+      @media(max-width: 900px) {
+        margin-right: 0rem;
+      }
+
+      @media(max-width: 500px) {
+        font-size: 2rem;
+      }
     }
 
     &-subtext {
@@ -71,6 +97,10 @@
       font-size: size(md);
       color: color(first);
       padding: 1rem 0;
+
+      @media(max-width: 500px) {
+        font-size: size(sm);
+      }
     }
   }
 }
