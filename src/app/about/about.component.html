@@ -6,7 +6,10 @@
   <img src="assets/images/about_us_group_photo.jpeg" class="about-us-img" alt="">
 </div>
 <div class="mission">
-  <h1 class="mission-heading">Our Mission</h1>
+  <h1 class="mission-heading">{{title}}</h1>
+  <input class="observable-input" type="text" #inputValue>
+  <button class="observable-button" (click)="changeMission()" >Click Mission</button>
+  <button class="observable-button" (click)="changeTitle()" >Change Title</button>
   <p class="mission-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora accusamus ex repudiandae suscipit. Eligendi, praesentium! Voluptatem temporibus perspiciatis iusto architecto.</p>
 </div>
 <div class="help-us">
