@@ -23,6 +23,10 @@
       align-self: center;
       padding-right: 0.5rem;
     }
+
+    @media(max-width: 280px) {
+      display: none;
+    }
   }
 
   &-social-media {
@@ -49,6 +53,10 @@
     &-paragraph {
       color: color(first);
       font-weight: 500;
+
+      @media(max-width: 280px) {
+        text-align: center;
+      }
 
       .italic-text {
         font-family: 'Libre Baskerville', serif;

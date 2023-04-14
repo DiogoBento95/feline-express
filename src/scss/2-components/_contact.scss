@@ -6,6 +6,10 @@
     font-family: 'Libre Baskerville', serif;
     text-align: center;
     padding: 20px 0px;
+
+    @media(max-width: 280px) {
+      font-size: size(md);
+    }
   }
 
   .form {
